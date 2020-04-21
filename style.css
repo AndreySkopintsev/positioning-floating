@@ -1,0 +1,410 @@
+
+nav{
+ position:fixed;
+ z-index:1;
+ background-color:white;
+ top:0;
+ left:0;
+ display:flex;
+ height:40px;
+ justify-content:space-between;
+ align-items:center;
+ width:100%;
+ border-bottom:1px solid rgba(232,232,232,0.9);
+ font-weight:700;
+ font-size:15;
+ font-family: 'Roboto Mono', monospace;
+}
+
+.menu{
+ width:235px;
+ display:flex;
+ align-items:center;
+ justify-content:space-around;
+}
+
+
+a{
+ color:black;
+ text-decoration:none;
+}
+
+a:visited{
+ color:black;
+}
+
+a:hover{
+ text-decoration:underline;
+}
+ 
+.burger{
+ height:30px;
+}
+
+.logo{
+ position:relative;
+ right:30px;
+}
+
+button{
+ background-color:white;
+ height:80%;
+ border:none;
+}
+
+#search{
+ height:15px;
+}
+
+.buttons{
+ position:relative;
+ right:10px;
+}
+
+.sign{
+ background-color:#296386;
+ color:white;
+ border-radius:5px;
+ font-weight:550;
+ font-size:11;
+ font-family: 'Roboto Mono', monospace;
+ padding:10px;
+}
+
+main{
+ margin:auto;
+ padding-top:50px;
+ display:grid;
+ grid-template-columns:1fr 2fr 1fr;
+ max-width:1200px;
+}
+
+main>*{
+ grid-column:2/-2;
+}
+
+h1{
+ grid-column:2;
+ font-family: 'Raleway', sans-serif;
+ font-size: 30px;
+ font-style: italic;
+}
+
+figure{
+  grid-column:1/-1;
+  justify-self:center;
+  max-width:1050;
+}
+
+figcaption{
+ grid-column: 1 /-1;
+ font-size:12px;
+ font-family:'Montserrat', sans-serif;
+ font-weight:1;
+ color: #666;
+}
+
+.credit{
+ font-size:13px;
+ color: #888;
+}
+
+section{
+ grid-column:2/-2;
+}
+
+p.author{
+ font-weight:550;
+}
+
+p.author>a{
+ text-decoration:underline;
+}
+
+div.social{
+ display:flex;
+ justify-content:space-between;
+}
+
+button.round {
+    border-radius: 100%;
+    background-color: #eee;
+    border: 1px #eee solid;
+    width: 30px;
+    height: 30px;
+}
+
+p.date{
+  font-size:14;
+  font-weight:300;
+}
+
+p.text{
+  font-size:20;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p.text>a{
+  text-decoration:underline;
+  color:rgb(70,130,180);
+}
+
+.unlock{
+  text-align:center;
+  font-weight:700;
+  font-size:14;
+  font-family:'Montserrat', sans-serif;
+}
+
+.unlock>a{
+  color:rgb(70,130,180);
+}
+
+div.picks{
+  grid-column:-2/-1;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  height:300px;
+  align-self:center;
+}
+
+div.editor{
+  width:200px;
+  border-bottom:1px solid rgba(232, 232, 232, 0.8);
+}
+
+div.pick{
+  display:flex; 
+}
+
+div.pick>a{
+  font-size:14;
+  padding-left:5px;
+  width:110px;
+}
+
+.big{
+  font-size:25;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style:italic;
+}
+
+.hardest{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:135px 150px 135px 150px;
+  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-size: cover;
+}
+
+.hardest{
+  grid-column:1/-1;
+  width:945px;
+  margin:0 auto 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size:13;
+}
+
+.row2{
+  grid-row:2;
+}
+
+.row4{
+  grid-row:4;
+}
+
+.item{
+  padding-right:5px;
+}
+
+.stuff{
+  grid-column:1/-1;
+  width:945px;
+  margin:0 auto 0 auto;
+}
+
+.authors{
+  
+  font-family: 'Montserrat', sans-serif;
+  color:black;
+  font-weight:1;
+  font-size:13;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  line-height:0;
+  font-size:16;
+}
+
+p.astro{
+  font-family: 'Montserrat', sans-serif;
+  font-size:14;
+}
+
+.video{
+ grid-column:2;
+ justify-self:end;
+}
+
+p.small{
+ font-size:12px;
+ font-family:'Montserrat', sans-serif;
+ font-weight:1;
+ color: #666;
+}
+
+p.small>a{
+ text-decoration:underline;
+ font-size:12px;
+ font-family:'Montserrat', sans-serif;
+ font-weight:1;
+ color: #666;
+}
+
+div.comments{
+ display:flex;
+ justify-content:space-between;
+}
+
+#read{
+ flex-grow:1;
+ max-width:400px;
+ font-size: 13px;
+ line-height: 24px;
+ font-weight: 600;
+}
+
+.more{
+ margin-top:10px;
+ grid-column:2/-2;
+ display:grid;
+ grid-template-columns:1fr 1fr 1fr;
+ grid-gap:30px;
+ max-width:800px;
+}
+
+.pic>img{
+ height:150px;
+ width:100%;
+}
+
+.note>a{
+ font-family: 'Montserrat', sans-serif;
+ color:black;
+ font-weight:700;
+ font-size:13pt;
+}
+
+.note>a:hover{
+ text-decoration:none;
+ color: #666;
+}
+
+footer{
+ margin-top:60px;
+ grid-column:1/4;
+ display:grid;
+ grid-template-columns:3fr 1fr;
+}
+
+.this{
+ border-top:1px solid black;
+ padding-top:10px;
+ grid-column:1/3;
+ max-width:800px;
+}
+
+#inspace>a{
+ font-family: 'Montserrat', sans-serif;
+ color:black;
+ font-weight:700;
+ font-size:13pt;
+}
+
+#inspace>a:hover{
+ text-decoration:underline;
+ color:black;
+}
+
+.popular{
+ grid-column:4;
+ 
+ font-family: 'Montserrat', sans-serif;
+ color:black;
+ font-weight:700;
+ font-size:13pt;
+ border-top:1px solid black;
+}
+
+ul{
+ list-style-type:none;
+ padding:0;
+ width:300px;
+}
+
+li{
+ padding:5px 5px 5px 0;
+ border-top:1px solid rgba(232, 232, 232, 0.8);
+ border-bottom:1px solid rgba(232, 232, 232, 0.8);
+}
+
+
+.bottom{
+ grid-column:1/4;
+ width:100%;
+ padding-top:40px;
+ margin-top:50px;
+ border-top:1px solid black;
+}
+
+.links{
+ display:grid;
+ grid-template-columns:repeat(6,1fr);
+ grid-gap: 10px;
+}
+
+
+li>a{
+ text-decoration:none;
+ color:black;
+}
+
+li>a:hover{
+ text-decoration:underline;
+}
+
+.list>ul{
+ list-style-type:none;
+ padding: 0;
+ width:150px;
+}
+
+li{
+ font-family:'Montserrat', sans-serif;
+ font-size:10pt;
+ padding:0;
+}
+
+.list>h3{
+ font-size:12pt;
+ font-family:'Montserrat', sans-serif;
+ line-height:15px;
+}
+
+br{
+ display:block;
+ margin-bottom:15px;
+}
+
+#ny{
+ position:relative;
+ bottom:15px;
+}
+
+svg{
+ height:15px;
+ padding-right:5px;
+}
